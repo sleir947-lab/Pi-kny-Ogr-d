@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 – Strona nie znaleziona | Piękny Ogród</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #e8f5e9, #f1f8f4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2d5c3d;
+        }
+
+        .container {
+            background: #ffffff;
+            max-width: 700px;
+            width: 90%;
+            padding: 50px 40px;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container::before {
+            content: "🌿";
+            font-size: 140px;
+            position: absolute;
+            top: -30px;
+            right: -20px;
+            opacity: 0.08;
+        }
+
+        h1 {
+            font-size: 64px;
+            margin: 0;
+            color: #2d5c3d;
+        }
+
+        h2 {
+            margin: 10px 0 20px;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .buttons {
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 8px;
+            padding: 14px 28px;
+            background: linear-gradient(135deg, #4CAF50, #43a047);
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 30px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+            box-shadow: 0 6px 15px rgba(76, 175, 80, 0.3);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(76, 175, 80, 0.4);
+            background: linear-gradient(135deg, #43a047, #388e3c);
+        }
+
+        .contact {
+            margin-top: 35px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .contact a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        .redirect {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #888;
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 48px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            .container {
+                padding: 40px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>404</h1>
+    <h2>Strona nie została znaleziona</h2>
+
+    <p>
+        Przepraszamy, ale strona, której szukasz, nie istnieje,<br>
+        została usunięta lub przeniesiona w inne miejsce.
+    </p>
+
+    <div class="buttons">
+        <a href="index.html" class="btn">Strona główna</a>
+        <a href="portfolio.html" class="btn">Realizacje</a>
+        <a href="contact.html" class="btn">Kontakt</a>
+    </div>
+
+    <div class="contact">
+        Jeśli problem się powtarza, napisz do nas:
+        <a href="mailto:sleir947@gmail.com">sleir947@gmail.com</a>
+    </div>
+
+    <div class="redirect">
+        Za chwilę zostaniesz automatycznie przekierowany na stronę główną 🌱
+    </div>
+</div>
+
+<script>
+    // Automatyczne przekierowanie po 10 sekundach
+    setTimeout(function () {
+        window.location.href = "index.html";
+    }, 10000);
+</script>
+
+</body>
+</html>
